@@ -3,10 +3,10 @@ class Solution:
         returnList = []
         leftPointer, rightPointer = 0,len(nums)-1
         
-        while leftPointer <= rightPointer:
-            # if :
-            #     returnList.insert(0,nums[leftPointer] ** 2)
-            #     break
+        while True:
+            if leftPointer == rightPointer:
+                returnList.insert(0,nums[leftPointer] ** 2)
+                break
                 
             if nums[leftPointer] ** 2 <= nums[rightPointer] ** 2:
                 returnList.insert(0,nums[rightPointer] ** 2)
@@ -15,6 +15,13 @@ class Solution:
                 returnList.insert(0,nums[leftPointer] ** 2)
                 leftPointer += 1
             
+        # while leftPointer <= rightPointer:
+        #     if nums[leftPointer] ** 2 <= nums[rightPointer] ** 2:
+        #         returnList.insert(0,nums[rightPointer] ** 2)
+        #         rightPointer -= 1
+        #     else:
+        #         returnList.insert(0,nums[leftPointer] ** 2)
+        #         leftPointer += 1
             
             
             
