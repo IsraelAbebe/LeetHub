@@ -3,8 +3,14 @@ class Solution:
         """
         Do not return anything, modify arr in-place instead.
         """
+        
+        """
+        Runtime: 1087 ms
+        Memory Usage: 14.9 MB
+        """
         len_array = len(arr)    
         i = 0
+        
         
         while i < len_array:
             if arr[i] == 0:
