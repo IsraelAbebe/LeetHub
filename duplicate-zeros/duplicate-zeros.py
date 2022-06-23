@@ -5,7 +5,7 @@ class Solution:
         """
         
         """
-        Runtime: 1087 ms
+        Runtime: 101 ms
         Memory Usage: 14.9 MB
         """
         len_array = len(arr)    
