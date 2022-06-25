@@ -7,7 +7,7 @@ class Solution:
                 nums[custom_index] = value
                 custom_index += 1
                 
-        nums[:] = nums[:custom_index]
+        return custom_index
                 
             
                 
