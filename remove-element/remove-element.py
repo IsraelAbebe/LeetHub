@@ -1,12 +1,17 @@
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
         # DUMMY WAY SINCE I CANT DO THE EFFICENT ONE
-        new_list = []
+        custom_index = 0
         for index, value in enumerate(nums):
             if value != val:
-                new_list.append(value)
-        
-        nums[:] = new_list
+                nums[custom_index] = value
+                custom_index += 1
+                
+        nums[:] = nums[:custom_index]
+                
+            
+                
+    
                 
         
         
