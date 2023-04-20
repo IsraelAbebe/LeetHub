@@ -14,6 +14,5 @@ class Solution:
     
     
     def heightChecker(self, heights: List[int]) -> int:
-        print([i==j for i,j in zip(self.sort(heights),heights)])
         return [i==j for i,j in zip(self.sort(heights),heights)].count(False)
     
